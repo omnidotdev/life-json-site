@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+.output/
+dist/
+
+# Vite
+.vite/
+
+# TanStack
+.nitro/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Lock files (tracked separately)
+# bun.lock
