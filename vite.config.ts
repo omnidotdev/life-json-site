@@ -20,6 +20,14 @@ const config = defineConfig(({ command }) => ({
     nitroV2Plugin({
       preset: "node-server",
       externals: { inline: ["srvx"] },
+      routeRules: {
+        "/**": {
+          headers: {
+            "Permissions-Policy": "geolocation=(), camera=(), microphone=()",
+            "Cache-Control": "public, max-age=0, must-revalidate",
+          },
+        },
+      },
     }),
     viteTsConfigPaths({
       projects: ["./tsconfig.json"],

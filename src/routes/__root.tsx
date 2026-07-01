@@ -81,6 +81,10 @@ export const Route = createRootRoute({
     ],
     links: [
       {
+        rel: "canonical",
+        href: app.url,
+      },
+      {
         rel: "stylesheet",
         href: appCss,
       },
@@ -106,6 +110,18 @@ export const Route = createRootRoute({
         rel: "apple-touch-icon",
         sizes: "180x180",
         href: "/apple-touch-icon.png",
+      },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          name: app.name,
+          url: app.url,
+          description: app.description,
+        }),
       },
     ],
   }),

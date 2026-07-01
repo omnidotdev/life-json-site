@@ -125,6 +125,14 @@ function HomePage() {
           >
             Terms
           </a>
+          <a
+            href={app.legal.cookies}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground text-sm transition-colors hover:text-foreground"
+          >
+            Cookies
+          </a>
         </div>
       </footer>
     </div>
