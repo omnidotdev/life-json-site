@@ -100,7 +100,7 @@ function HomePage() {
 
       {/* Footer */}
       <footer className="border-border border-t px-6 py-8">
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="mx-auto flex max-w-3xl flex-wrap items-center justify-center gap-x-6 gap-y-2 text-center">
           <a
             href={app.organization.url}
             target="_blank"
@@ -108,6 +108,22 @@ function HomePage() {
             className="text-muted-foreground text-sm transition-colors hover:text-foreground"
           >
             {app.organization.name}
+          </a>
+          <a
+            href={app.legal.privacy}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground text-sm transition-colors hover:text-foreground"
+          >
+            Privacy
+          </a>
+          <a
+            href={app.legal.terms}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-muted-foreground text-sm transition-colors hover:text-foreground"
+          >
+            Terms
           </a>
         </div>
       </footer>

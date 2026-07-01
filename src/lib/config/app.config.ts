@@ -14,6 +14,12 @@ const app = {
   links: {
     schema: "https://github.com/omnidotdev/life-json-schema",
     github: "https://github.com/omnidotdev/life-json",
+    threads: "https://www.threads.com/@omnidotdev",
+  },
+  // Legal links mirror the omni-api catalog SSOT
+  legal: {
+    privacy: "https://omni.dev/legal/privacy",
+    terms: "https://omni.dev/legal/terms",
   },
 };
 
