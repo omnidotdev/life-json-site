@@ -64,6 +64,8 @@
 :root {
   --background: var(--color-cream-50);
   --foreground: var(--color-earth-900);
+  /* Tints the shared Omni scrollbar thumb (thornberry base.css) */
+  --muted-foreground: var(--color-earth-600);
 }
 
 .dark {
@@ -87,6 +89,7 @@
   --color-ring: var(--color-sage-400);
   --background: var(--color-earth-900);
   --foreground: var(--color-cream-100);
+  --muted-foreground: var(--color-cream-400);
 }
 
 @layer base {

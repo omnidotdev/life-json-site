@@ -30,7 +30,7 @@
     "vite-plugin-mkcert": "^1.17.9"
   },
   "dependencies": {
-    "@omnidotdev/thornberry": "github:omnidotdev/thornberry#6f878df",
+    "@omnidotdev/thornberry": "github:omnidotdev/thornberry#baea091695a4c0ccfce027117180edbe286d3628",
     "@tailwindcss/vite": "^4.1.18",
     "@tanstack/nitro-v2-vite-plugin": "^1.154.7",
     "@tanstack/react-router": "^1.157.6",
