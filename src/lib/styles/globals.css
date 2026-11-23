@@ -36,16 +36,29 @@
   --color-earth-800: oklch(0.3 0.05 50);
   --color-earth-900: oklch(0.22 0.04 50);
 
-  /* Theme tokens */
+  /* Theme tokens. Thornberry components style themselves with the shared
+     token contract (background, foreground, card, popover, primary, secondary,
+     muted, accent, destructive, border, input, ring). Every name must resolve,
+     or the utility silently drops: an unmapped `border-input` falls back to
+     `currentColor` and paints a bright border */
   --color-background: var(--color-cream-50);
   --color-foreground: var(--color-earth-900);
+  --color-card: var(--color-cream-50);
+  --color-card-foreground: var(--color-earth-900);
+  --color-popover: var(--color-cream-50);
+  --color-popover-foreground: var(--color-earth-900);
+  --color-secondary: var(--color-cream-200);
+  --color-secondary-foreground: var(--color-earth-900);
   --color-muted: var(--color-cream-200);
   --color-muted-foreground: var(--color-earth-600);
   --color-primary: var(--color-sage-600);
   --color-primary-foreground: var(--color-cream-50);
   --color-accent: var(--color-sage-100);
   --color-accent-foreground: var(--color-sage-800);
+  --color-destructive: oklch(0.577 0.245 27.325);
   --color-border: var(--color-cream-300);
+  --color-input: var(--color-cream-300);
+  --color-ring: var(--color-sage-500);
 }
 
 :root {
@@ -56,13 +69,22 @@
 .dark {
   --color-background: var(--color-earth-900);
   --color-foreground: var(--color-cream-100);
+  --color-card: var(--color-earth-900);
+  --color-card-foreground: var(--color-cream-100);
+  --color-popover: var(--color-earth-900);
+  --color-popover-foreground: var(--color-cream-100);
+  --color-secondary: var(--color-earth-800);
+  --color-secondary-foreground: var(--color-cream-100);
   --color-muted: var(--color-earth-800);
   --color-muted-foreground: var(--color-cream-400);
   --color-primary: var(--color-sage-400);
   --color-primary-foreground: var(--color-earth-900);
   --color-accent: var(--color-sage-900);
   --color-accent-foreground: var(--color-sage-200);
+  --color-destructive: oklch(0.704 0.191 22.216);
   --color-border: var(--color-earth-700);
+  --color-input: var(--color-earth-700);
+  --color-ring: var(--color-sage-400);
   --background: var(--color-earth-900);
   --foreground: var(--color-cream-100);
 }
